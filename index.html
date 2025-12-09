@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>William Houston Martin – Cybersecurity Analyst</title>
+
+    <!-- JSON-LD Structured Metadata for Recruiters -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "William Houston Martin",
+      "jobTitle": "Cybersecurity Analyst",
+      "url": "",
+      "description": "Cybersecurity Analyst specializing in Defense-in-Depth, monitoring, SOC tools, and incident response.",
+      "skills": [
+        "Wazuh", "Splunk", "pfSense", "Nessus", "SIEM", "Vulnerability Management", "Active Directory", "Windows Server", "Kali Linux"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card: #161b22;
+            --text: #e6edf3;
+            --muted: #8b949e;
+            --border: #30363d;
+        }
+        [data-theme="light"] {
+            --bg: #f7f7f7;
+            --card: #ffffff;
+            --text: #111;
+            --muted: #555;
+            --border: #ddd;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            transition: background 0.4s, color 0.4s;
+        }
+        header {
+            background: var(--card);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--border);
+        }
+        nav {
+            background: var(--card);
+            padding: 15px 20px;
+            border-bottom: 2px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        nav a {
+            margin-right: 20px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover { color: #58a6ff; }
+
+        .toggle-btn {
+            padding: 8px 14px;
+            background: var(--border);
+            border-radius: 6px;
+            cursor: pointer;
+            color: var(--text);
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 5px;
+        }
+        .card {
+            background: var(--card);
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(25px);
+            animation: fadeIn 0.6s ease forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+        .resume-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background: #238636;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .resume-btn:hover { background: #2ea043; }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: var(--card);
+            border-top: 2px solid var(--border);
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#projects">Projects</a>
+            <a href="#evidence">Evidence</a>
+            <a href="#mitre">MITRE</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="toggle-btn" onclick="toggleTheme()">Toggle Theme</div>
+    </nav>
+
+    <header id="home">
+        <h1>William Houston Martin</h1>
+        <p>Cybersecurity Analyst | SOC Apprentice | Blue Team Defender</p>
+        <a href="Resume.pdf" class="resume-btn" download>Download Resume (PDF)</a>
+    </header>
+
+    <!-- Resume Preview -->
+    <section id="resume-preview">
+        <h2>Resume Preview</h2>
+        <div class="card">
+            <p>This embedded preview will work automatically on GitHub Pages once you upload <strong>Resume.pdf</strong> to your repository root.</p>
+            <iframe src="Resume.pdf" style="width:100%; height:600px; border:1px solid var(--border); border-radius:10px;"></iframe>
+        </div>
+    </section>
+
+    <section id="architecture">
+        <h2>Defense-in-Depth Architecture</h2>
+        <div class="card">
+            <ul>
+                <li>Layer 1 – Physical Security</li>
+                <li>Layer 2 – Perimeter Security</li>
+                <li>Layer 3 – Internal Network</li>
+                <li>Layer 4 – Endpoint Security</li>
+                <li>Layer 5 – Application Security</li>
+                <li>Layer 6 – Data Security</li>
+                <li>Layer 7 – SOC & Monitoring</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Project Portfolio (HSOC)</h2>
+        <div class="card"><h3>Week 1 – Mission + Risk Assessment</h3></div>
+        <div class="card"><h3>Week 2 – Build the Lab</h3></div>
+        <div class="card"><h3>Week 3 – Identity & Hardening</h3></div>
+        <div class="card"><h3>Week 4 – Network Defense</h3></div>
+        <div class="card"><h3>Week 5 – SIEM Deployment</h3></div>
+        <div class="card"><h3>Week 6 – Vulnerability Management</h3></div>
+        <div class="card"><h3>Week 7 – Data Protection</h3></div>
+    </section>
+
+    <section id="evidence">
+        <h2>Evidence Gallery</h2>
+        <div class="gallery">
+            <img src="evidence1.png" alt="Evidence 1" />
+            <img src="evidence2.png" alt="Evidence 2" />
+            <img src="evidence3.png" alt="Evidence 3" />
+        </div>
+    </section>
+
+    <section id="mitre">
+        <h2>MITRE ATT&CK Mappings</h2>
+        <div class="card">
+            <ul>
+                <li>T1110 – Brute Force</li>
+                <li>T1059 – Command Execution</li>
+                <li>T1041 – Exfiltration</li>
+                <li>T1547 – Persistence</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p><strong>Name:</strong> William Houston Martin</p>
+            <p><strong>Email:</strong> Your Email</p>
+            <p><strong>LinkedIn:</strong> Link Here</p>
+            <p><strong>GitHub:</strong> Link Here</p>
+        </div>
+    </section>
+
+    <div class="footer">© 2025 William Houston Martin</div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.documentElement;
+            body.dataset.theme = body.dataset.theme === "dark" ? "light" : "dark";
+        }
+    </script>
+</body>
+</html>
